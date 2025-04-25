@@ -223,8 +223,6 @@ h2, h3 {
   flex-direction: column;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  -webkit-hyphens: auto;
-  
   hyphens: auto;
 }
 
@@ -245,7 +243,6 @@ h2, h3 {
   margin-bottom: 16px; 
   overflow-wrap: break-word;
   word-wrap: break-word;
-  -webkit-hyphens: auto;
   hyphens: auto;
 }
 
