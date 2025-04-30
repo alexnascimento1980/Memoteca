@@ -10,21 +10,28 @@ const ui = {
   },
 
   limparFormulario() {
-    document.getElementById("pensamento-form").reset();
+    document.getElementById("pensamento-form").reset()
   },
-  
-  async renderizarPensamentos() {
+
+  async renderizarPensamentos(pensamentosFiltrados = null) {
     const listaPensamentos = document.getElementById("lista-pensamentos")
     const mensagemVazia = document.getElementById("mensagem-vazia")
     listaPensamentos.innerHTML = ""
-
+  
     try {
-      const pensamentos = await api.buscarPensamentos()
-      if (pensamentos.length === 0) {
+      let pensamentosParaRenderizar
+
+      if(pensamentosFiltrados) {
+        pensamentosParaRenderizar = pensamentosFiltrados
+      } else {
+        pensamentosParaRenderizar = await api.buscarPensamentos()
+      }
+      
+      if (pensamentosParaRenderizar.length === 0) {
         mensagemVazia.style.display = "block"
       } else {
         mensagemVazia.style.display = "none"
-        pensamentos.forEach(ui.adicionarPensamentoNaLista)
+        pensamentosParaRenderizar.forEach(ui.adicionarPensamentoNaLista)
       } 
     }
     catch {
@@ -67,7 +74,7 @@ const ui = {
         await api.excluirPensamento(pensamento.id)
         ui.renderizarPensamentos()
       } catch (error) {
-        alert("Erro ao excluir pensamnto")
+        alert("Erro ao excluir pensamento")
       }
     }
 
