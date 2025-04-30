@@ -2,76 +2,91 @@
   "pensamentos": [
     {
       "id": "2a56",
+      "favorito": true,
       "conteudo": "Vc faz TI? Conserta meu celular!",
       "autoria": "Grupo da família"
     },
     {
       "id": "9f3c",
-      "conteudo": "Você não é todo mundo!",
-      "autoria": "Mãe"
+      "conteudo": "Você não é todo mundo!!!!!!!!!!!!!!!",
+      "autoria": "Mãe",
+      "favorito": true
     },
     {
       "id": "6a2b",
+      "favorito": true,
       "conteudo": "Foi sem querer querendo!",
       "autoria": "Chaves"
     },
     {
       "id": "7e2a",
+      "favorito": false,
       "conteudo": "Que a força esteja com você!",
       "autoria": "Mestre Yoda"
     },
     {
       "id": "5c8f",
+      "favorito": false,
       "conteudo": "Resolver o bug não consegue? Esfriar a cabeça vc deve.",
       "autoria": "Mestre Yoda"
     },
     {
       "id": "2d6e",
+      "favorito": false,
       "conteudo": "Não faça drama, faça café! :)",
       "autoria": "Dev"
     },
     {
       "id": "3f1a",
+      "favorito": false,
       "conteudo": "Conserta minha impressora?",
       "autoria": "Grupo da família"
     },
     {
       "id": "8b4c",
+      "favorito": false,
       "conteudo": "A vingança nunca é plena... mata a alma e a envenena...",
       "autoria": "Seu Madruga"
     },
     {
       "id": "584a",
+      "favorito": false,
       "conteudo": "Na minha máquina funciona!",
       "autoria": "Dev"
     },
     {
       "id": "8b67",
+      "favorito": false,
       "conteudo": "Agora pronto!",
       "autoria": "Alex"
     },
     {
       "id": "d306",
+      "favorito": false,
       "conteudo": "Vamos São Paulo!",
       "autoria": "Alex"
     },
     {
       "id": "b3e2",
+      "favorito": false,
       "conteudo": "Vamos São Paulo!",
       "autoria": "Alex"
     },
     {
       "id": "7a6a",
+      "favorito": false,
       "conteudo": "Vamos São Paulo!",
       "autoria": "Alex"
     },
     {
       "id": "f7b3",
+      "favorito": false,
       "conteudo": "Vamos São Paulo!",
       "autoria": "Alex"
     },
     {
       "id": "071a",
+      "favorito": false,
       "conteudo": "aqq",
       "autoria": "a"
     }
