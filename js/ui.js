@@ -90,27 +90,22 @@ const ui = {
         await api.atualizarFavorito(pensamento.id, !pensamento.favorito)
         ui.renderizarPensamentos()
       } catch (error) {
-        alert("Erro ao atualizar favorito")
+        alert("Erro ao atualizar pensamento")
       }
     }
 
-
     const iconeFavorito = document.createElement("img")
-    iconeFavorito.src = pensamento.favorito ?
+    iconeFavorito.src = pensamento.favorito ? 
     "assets/imagens/icone-favorito.png" :
     "assets/imagens/icone-favorito_outline.png"
-
-    iconeFavorito.alt = "Favoritar"
-    iconeFavorito.classList.add("icone-favorito")
+    iconeFavorito.alt = "Ícone de favorito"
     botaoFavorito.appendChild(iconeFavorito)
-    
 
     const icones = document.createElement("div")
     icones.classList.add("icones")
     icones.appendChild(botaoFavorito)
     icones.appendChild(botaoEditar)
     icones.appendChild(botaoExcluir)
-    
 
     li.appendChild(iconeAspas)
     li.appendChild(pensamentoConteudo)
